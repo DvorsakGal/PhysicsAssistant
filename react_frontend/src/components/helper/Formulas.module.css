@@ -1,0 +1,10 @@
+.ul {
+    list-style: none;
+}
+
+.formulasMain {
+    border: 2px solid white;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

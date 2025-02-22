@@ -1,0 +1,20 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  padding-top: 4rem; /* Adjust this to match your navbar height */
+}
+
+html, body, #root {
+  height: 100%; /* Ensures the layout takes the full height */
+}
+
+.main-content {
+  margin-top: 60px; /* Push content below the navbar */
+  height: calc(100% - 60px); /* Take up the rest of the viewport */
+  overflow: auto; /* Allow scrolling if needed */
+}

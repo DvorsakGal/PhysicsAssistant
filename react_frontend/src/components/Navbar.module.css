@@ -1,0 +1,27 @@
+/* Navbar.module.css */
+.navbar {
+    position: fixed; /* Sticks to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #333; /* Dark background color */
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-around; /* Space between links */
+    align-items: center;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Slightly lighter on hover */
+    border-radius: 5px;
+}

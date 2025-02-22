@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package educational;
+
+service EducationalService {
+  rpc GetEducationalData(GetEducationalDataRequest) returns (EducationalDataResponse);
+  rpc AddEducationalData(AddEducationalDataRequest) returns (AddEducationalDataResponse);
+  rpc StreamEducationalData(StreamEducationalDataRequest) returns (stream EducationalData);
+  rpc DeleteEducationalData(DeleteEducationalDataRequest) returns (DeleteEducationalDataResponse);
+}
+
+message GetEducationalDataRequest {
+  string title = 1;
+}
+
+message EducationalData {
+  string title = 1;
+  string summary = 2;
+	string link = 3;
+  string created_at = 4;
+  string level = 5;
+}
+
+message EducationalDataResponse {
+  repeated EducationalData data = 1;
+}
+
+message AddEducationalDataRequest {
+  string title = 1;
+  string summary = 2;
+	string link = 3;
+  string level = 4;
+}
+
+message AddEducationalDataResponse {
+  string message = 1;
+}
+
+message DeleteEducationalDataRequest {
+  string title = 1;
+}
+
+message DeleteEducationalDataResponse {
+  string message = 1;
+}
+
+message StreamEducationalDataRequest {
+  string title = 1;  // The title or search term the user is filtering by
+}
+
+message Empty {}
