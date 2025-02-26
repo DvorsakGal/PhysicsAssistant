@@ -5,7 +5,11 @@ This project is a **Physics Learning Assistant Web App** designed to integrate v
 
 The app consists of two main sections:
 1. **🏫 Classroom** - A section where users can add, search, and delete educational content using gRPC as a separate microservice.
+   <img src="https://github.com/user-attachments/assets/7ae107c2-5e4e-4d07-850d-bcb73a3ddbee" alt="Classroom site" width="600"/>
+
 2. **🧑‍🎓 Helper** - A section that allows users to scrape formulas, explanations, and links from the web, as well as ask a chatbot (Schrody) for assistance.
+   <img src="https://github.com/user-attachments/assets/9f2b8407-e064-460d-bd32-2c1297c62916" alt="Helper site" width="600"/>
+
 
 ## Tech Stack 🖥️
 ### Frontend:
