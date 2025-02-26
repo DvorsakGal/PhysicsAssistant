@@ -42,3 +42,16 @@ The app consists of two main sections:
 - The database includes **test users** at startup.
 - Login is **mocked** (only email required) to demonstrate the event bus functionality.
 - Security was **not a primary focus** of this project.
+
+## Running the app ▶️
+- **gRPC service** should be run with:
+  ```sh
+  python server.py
+- **flask app** should be run with:
+  ```sh
+  python -m flask run
+- **react frontend** should be run with:
+  ```sh
+  npm i
+  npm run dev
+  
