@@ -1,7 +1,7 @@
 import google.generativeai as genai
 from flask import jsonify
 
-genai.configure(api_key="AIzaSyAUhOy4ycWCI6cH1QuXSwMfKbKgYyMf-ZM")
+genai.configure(api_key="YOUR_API_KEY")
 
 # Create the model
 generation_config = {
